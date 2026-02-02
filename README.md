@@ -33,13 +33,24 @@
   let b = 'hello'
   let c = [true, false]
   ```
-
 | type system feature | js | ts |
 |---|---|---|
 | how are types bound? | dynamically | statically |
 | are types automatically converted? | yes | no |
 | when are types checked? | at runtime | at compile time |
 | when are errors surfaced? | at runtime (mostly) | at compile time (mostly) |
+
+## Types
+> A set of values and the things you can do with them
+- When you see that something is of type T, not only do you know that it's a T, but you also know exactly _what you can do_ with that T (and what you can't).
+  
+<img width="558" height="337" alt="Screenshot 2026-02-01 at 5 26 45 PM" src="https://github.com/user-attachments/assets/8801c49a-ea57-4fb8-b5e5-841f305aba15" />
+
+- `any` is the Godfather of types. You don't want to ask `any` for a favor unless you're completely out of options. Should avoid when possible.
+- `unknown` - use it when you have a value whose type you really don't know ahead of time.
+- `boolean` has 2 values: `true` and `false`.
+- _type literals_ is a type that represents a single value and nothing else.
+- `number`, `string`, `symbol`
 
 ## books
 1. Programming TypeScript: Making Your JavaScript Applications Scale (Boris Cherny)
